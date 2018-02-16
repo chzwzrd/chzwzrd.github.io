@@ -8,7 +8,7 @@
     <title>Melodie Chi</title>
 
      <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato|Permanent+Marker|Berkshire+Swash|Aladin|Leckerli+One|Sedgwick Ave Display|Averia+Libre:400,700|Averia+Serif+Libre:400,700|Bungee+Inline|Cinzel+Decorative:400,700,900|Corben:400,700|Libre+Barcode+128+Text|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Lobster|Metamorphous|Mirza:400,500,600,700|Nixie+One|Oleo+Script+Swash+Caps:400,700|Patua+One|Salsa|Special+Elite|Vast+Shadow|Zilla+Slab+Highlight:400,700|Roboto+Condensed:400,700|Cormorant+SC|Barlow+Condensed|Barlow|Montserrat:100|Dosis|Open+Sans|Raleway:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato|Permanent+Marker|Berkshire+Swash|Aladin|Leckerli+One|Sedgwick Ave Display|Averia+Libre:400,700|Averia+Serif+Libre:400,700|Bungee+Inline|Cinzel+Decorative:400,700,900|Corben:400,700|Libre+Barcode+128+Text|Libre+Barcode+39+Extended+Text|Libre+Barcode+39+Text|Lobster|Metamorphous|Mirza:400,500,600,700|Nixie+One|Oleo+Script+Swash+Caps:400,700|Patua+One|Salsa|Special+Elite|Vast+Shadow|Zilla+Slab+Highlight:400,700|Roboto+Condensed:400,700|Cormorant+SC|Barlow+Condensed|Barlow|alegreya:100,200,300|Dosis|Open+Sans|Raleway:100|Alegreya+Sans+SC:100,300,400|Quicksand:300,400" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
@@ -18,7 +18,7 @@
 </head>
 <body>
     
-    <nav class='navbar navbar-inverse center'>
+    <nav class='navbar navbar-inverse center alegreya'>
         <div class='container-fluid'>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -33,16 +33,16 @@
             <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class='active'>
-                        <a hrefo='/'>home</a>
+                        <a href='./index.html'>home</a>
                     </li>
                     <li>
-                        <a href='/about.html'>about</a>
+                        <a href='./about.html'>about</a>
                     </li>
                     <li>
-                        <a href='/portfolio.html'>portfolio</a>
+                        <a href='./portfolio.html'>portfolio</a>
                     </li>
                     <li>
-                        <a href='/contact.html'>contact</a>
+                        <a href='./contact.html'>contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,18 +52,41 @@
     <div class="wrapper">
          <div class="hero text-center">
              <div class="hero-content">
-                <h1 class='text-responsive'>&lt;melodie chi /&gt;</h1>
-                <button id='hire-me-btn' class='btn btn-default'>HIRE ME</button>
+                <h1 class='lobster text-responsive'>&lt;melodie chi /&gt;</h1>
+                <button id='hire-me-btn' class='btn btn-default alegreya'>HIRE ME</button>
              </div>
          </div>
     </div>
 
-    <footer class="footer navbar-fixed-bottom">
-        <div class='container'>
-            <span class='text-muted'>&copy; 2018 Melodie Chi</span>
+    <div class="footer-div navbar-fixed-bottom">
+        <div class="media-bar text-center">
+            <div class="icons-div">
+                <a href="https://github.com/chzwzrd/" target="_blank" data-toggle="tooltip" data-placement="top" title="Github">
+                    <img class="connect-icon" src="../img/icon/github/if_github_circle_greyblue.svg" alt="github logo" />
+                </a>
+                <a href="https://www.linkedin.com/in/melodiechi/" target="_blank" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                    <img class="connect-icon" src="../img/icon/linkedin/if_linkedin_circle_greyblue.svg" alt="linkedin logo" />
+                </a>
+                <a href="https://stackoverflow.com/users/8455866/chzwzrd?tab=profile" target="_blank" data-toggle="tooltip" data-placement="top" title="StackOverflow">
+                    <img class="connect-icon" src="../img/icon/stackoverflow/if_stackoverflow_circle_greyblue.svg" alt="stackoverflow logo" />
+                </a>
+            </div>
         </div>
-    </footer>
+        
+        <footer class="footer alegreya">
+            <div class='container'>
+                <span class='text-muted'>&copy; 2018 Melodie Chi</span>
+            </div>
+        </footer>
+    </div>
 
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript (always goes after jQuery CDN) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- External JavaScript -->
     <script src="../js/script.js"></script>
 </body>
 </html>
