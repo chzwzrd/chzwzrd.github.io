@@ -1,0 +1,199 @@
+body,
+html {
+    height: 100%;
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    /* letter-spacing: 1.5px; */
+}
+
+.alegreya {
+    font-family: 'Alegreya Sans SC';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+nav.navbar.navbar-inverse {
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+    background-color: rgb(151, 146, 135);
+    box-shadow: 0 3px 10px 0 rgb(54, 54, 54);
+    z-index: 99;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: rgba(221, 221, 221, 0.253);
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:active,
+.navbar-inverse .navbar-toggle:focus {
+    border-color: #222;
+}
+
+.navbar-collapse {
+    border: none !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #f0f0f0;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    /* background-color: rgb(122, 118, 109); */
+    /* background-color: rgb(148, 142, 129); */
+    background-color: rgb(141, 136, 125);
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: rgb(37, 37, 37);
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-nav li {
+    width: 100px;
+}
+
+.about-wrapper {
+    height: 90%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+/* .carousel {
+    position: static;
+    padding-top: 100px;
+} */
+
+.about {
+    /* width: 80%; */
+    /* margin: auto; */
+    padding-top: 5%;
+    font-weight: 300;
+}
+
+.bio-header {
+    width: 100%;
+    margin: -2% auto -10px;
+    /* border: 1px solid white; */
+}
+
+.about h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+
+#emoji {
+    width: 60px;
+    margin-left: -10px;
+    padding-bottom: 5px;
+    /* transform: scaleX(-1) rotate(5deg); */
+    transform: rotate(3deg);
+}
+
+.about hr {
+    width: 45%;
+    /* color: white; */
+    /* border: 0.5px solid rgb(66, 66, 66); */
+    /* border: 0.5px solid white; */
+    font-weight: lighter;
+}
+
+.ruler {
+    width: 48%;
+    margin: auto;
+    height: 0.2px;
+    background-color: rgb(66, 66, 66);
+}
+
+.bio-content {
+    display: flex;
+    justify-content: center;
+}
+
+#bio-pic {
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 140px;
+    height: 140px;
+    background-image: url("../img/bio/meowl.png");
+    background-position-x: -20px;
+    /* background-position-y: 5px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    /* border: 1px solid rgb(66, 66, 66); */
+    /* overflow: hidden; */
+    /* object-fit: cover; */
+}
+
+.about .bio-para {
+    width: 30%;
+    font-weight: 200;
+}
+
+.about .bio-para a {
+    /* color: rgb(151, 146, 135); */
+    /* color: rgb(175, 170, 157); */
+    color: rgb(157, 174, 175);
+}
+
+.about p {
+    margin: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 58px;
+    /* Set the fixed height of the footer here */
+    line-height: 60px;
+    /* Vertically center the text there */
+    background-color: #222;
+    text-align: center;
+}
+
+.media-bar {
+    width: 100%;
+    height: 32px;
+    /* background-color: rgb(59, 59, 59); */
+    background-color: rgb(49, 49, 49);
+}
+
+.icons-div {
+    padding-top: 4.5px;
+}
+
+.connect-icon {
+    width: 22px;
+    margin: auto 15px;
+}
+
+/* .icons-div a +.tooltip.top>.tooltip-inner,
+.icons-div a+.tooltip.top>.tooltip-arrow {
+    background-color: rgb(61, 61, 61);
+} */
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
