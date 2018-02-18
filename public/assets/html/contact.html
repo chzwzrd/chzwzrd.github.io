@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
     <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/contact.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/contact.css" />
 </head>
 
 <body>
@@ -35,16 +35,16 @@
             <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href='/'>home</a>
+                        <a href='./index.html'>home</a>
                     </li>
                     <li>
-                        <a href='/about'>about</a>
+                        <a href='./about.html'>about</a>
                     </li>
                     <li>
-                        <a href='/portfolio'>portfolio</a>
+                        <a href='./portfolio.html'>portfolio</a>
                     </li>
-                    <li class='active'>
-                        <a href='/contact'>contact</a>
+                    <li class="active">
+                        <a href='./contact.html'>contact</a>
                     </li>
                 </ul>
             </div>
@@ -53,33 +53,41 @@
 
     <div class="contact-wrapper montserrat">
         <div class="contact-content">
-            <form id="contact-form" action="" method="post" enctype="text/plain">
-                <h1 class="contact-header text-center alegreya">let's build things <button id="submit-btn" type="submit" class="btn" data-toggle="tooltip" data-placement="right" title="Send">
-                    <i class="fa fa-paper-plane"></i>
-                </button></h1>
-                <!-- <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="name" class="form-control" id="name" placeholder="Leslie Knope">
+            <h1 class="contact-header text-center alegreya">let's connect</h1>
+
+            <!-- <hr /> -->
+            
+            <div class="connect-wrapper text-center">
+                <div class="connect phone">
+                    <button data-toggle="tooltip" data-placement="right" title="(714) 686-5168"><i class="fa fa-mobile-alt"></i></button>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="leslie@parks.in.gov">
+                <div class="connect location">
+                    <button data-toggle="tooltip" data-placement="right" title="Orange County, CA">
+                        <i class="fa fa-map-marker-alt"></i>
+                    </button>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" class="form-control" rows="8" placeholder="Are we still on for coffee next week? Excited to hash out ideas with you."></textarea>
-                </div> -->
-                Name<br />
-                <input type="text" id="user-name" name="name" placeholder="Leslie Knope" required="required" autocomplete="name" autofocus="autofocus"
-                />
-                <br />
-                Email<br />
-                <input type="email" id="user-email" name="email" placeholder="leslie@parks.in.gov" required="required" autocomplete="email" />
-                <br />
-                Message<br />
-                <textarea id="user-message" name="message" rows="8" cols="80" placeholder="Are we still on for coffee next week? Excited to hash out some ideas with you." required="required"></textarea>
-                <br />
-            </form>
+                <div class="connect email">
+                    <button data-toggle="tooltip" data-placement="right" title="chzwzrd@gmail.com">
+                        <i class="fas fa-at"></i>
+                    </button>
+                </div>
+                <div class="connect github">
+                    <button data-toggle="tooltip" data-placement="right" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </button>
+                </div>
+                <div class="connect linkedin">
+                    <button data-toggle="tooltip" data-placement="right" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </button>
+                </div>
+                <div class="connect resume">
+                    <button data-toggle="tooltip" data-placement="right" title="Resume">
+                        <i class="far fa-file-alt"></i>
+                    </button>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -87,14 +95,14 @@
         <div class="media-bar text-center">
             <div class="icons-div">
                 <a href="https://github.com/chzwzrd/" target="_blank" data-toggle="tooltip" data-placement="top" title="Github">
-                    <img class="connect-icon" src="/assets/img/icon/github/if_github_circle_greyblue.svg" alt="github logo" />
+                    <img class="connect-icon" src="../img/icon/github/if_github_circle_greyblue.svg" alt="github logo" />
                 </a>
                 <a href="https://www.linkedin.com/in/melodiechi/" target="_blank" data-toggle="tooltip" data-placement="top" title="LinkedIn">
-                    <img class="connect-icon" src="/assets/img/icon/linkedin/if_linkedin_circle_greyblue.svg" alt="linkedin logo" />
+                    <img class="connect-icon" src="../img/icon/linkedin/if_linkedin_circle_greyblue.svg" alt="linkedin logo" />
                 </a>
                 <a href="https://stackoverflow.com/users/8455866/chzwzrd?tab=profile" target="_blank" data-toggle="tooltip" data-placement="top"
                     title="StackOverflow">
-                    <img class="connect-icon" src="/assets/img/icon/stackoverflow/if_stackoverflow_circle_greyblue.svg" alt="stackoverflow logo" />
+                    <img class="connect-icon" src="../img/icon/stackoverflow/if_stackoverflow_circle_greyblue.svg" alt="stackoverflow logo" />
                 </a>
             </div>
         </div>
@@ -119,7 +127,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
 
     <!-- External JavaScript -->
-    <script src="/assets/js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

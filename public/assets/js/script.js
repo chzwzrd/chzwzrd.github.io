@@ -6,7 +6,7 @@ $(() => {
     // HOME PAGE
     // =====================================================================================
     $("#hire-me-btn").on('click', function() {
-        window.location.assign('/contact');
+        window.location.assign('./contact.html');
     });
 
     // CONTACT PAGE
