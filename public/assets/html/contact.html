@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
     <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/about.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/contact.css" />
 </head>
 
 <body>
@@ -37,13 +37,13 @@
                     <li>
                         <a href='./index.html'>home</a>
                     </li>
-                    <li class='active'>
+                    <li>
                         <a href='./about.html'>about</a>
                     </li>
                     <li>
                         <a href='./portfolio.html'>portfolio</a>
                     </li>
-                    <li>
+                    <li class='active'>
                         <a href='./contact.html'>contact</a>
                     </li>
                 </ul>
@@ -51,80 +51,26 @@
         </div>
     </nav>
 
-    <!-- <div class="wrapper">
-        <div class="about montserrat">
-            <div class="row">
-                <div class="col-md-2 col-md-offset-1">
-                    <div id="bio-pic"></div>
-                </div>
-
-                <div class="col-md-6 col-md-offset-2">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="lobster text-center">hello, world
-                                <img id="emoji" src="../img/misc/waving-hand-emoji.png" alt="waving hand emoji" />
-                            </h1>
-                        </div>
-                    </div> 
-
-                    <div class="row">
-                        <div class="col-md-12 bio-para">
-                            <p>
-                                Melodie is a human being who doesn't know how to sufficiently describe herself or write a short personal biography. She often
-                                finds herself thinking way too much about things that, in reality, will never affect her.
-                            </p>
-                            <p>
-                                Her major interests include creative writing, psychology, philosophy, singing-songwriting, doodling, design, photography,
-                                and of course, web development.
-                            </p>
-                            <p>
-                                She plans to graduate from UCI & the UCI Coding Bootcamp, land a job, move to San Diego with her two furry friends, and work
-                                remotely while playing guitar and traveling with the sea breeze.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>  -->
-
-    <div class="about-wrapper">
-        <div class="about montserrat">
-            <div class="about-grid">
-                <h1 class="lobster text-center">hello, world
-                    <img id="emoji" src="../img/misc/waving-hand-emoji.png" alt="waving hand emoji" />
-                </h1>
-
-                <hr />
-
-                <div class="bio-content">
-                    <div>
-                        <div id="bio-pic"></div>
-                    </div>
-
-                    <div class="bio-para">
-                        <p>
-                            Melodie is a human being who doesn't know how to sufficiently describe herself or write a short personal biography. She often
-                            finds herself thinking way too much about things that, in reality, will never affect her.
-                        </p>
-                        <p>
-                            Her major interests include creative writing, psychology, philosophy, singing-songwriting, doodling, design, photography,
-                            and of course, web development.
-                        </p>
-                        <p>
-                            She plans to graduate from UCI & the UCI Coding Bootcamp, land a job, move to San Diego with her two furry friends, and work
-                            remotely while playing guitar and traveling with the sea breeze.
-                        </p>
-                    </div>
-                    <!-- /.paragraph row -->
-                </div>
-                <!-- /.bio column -->
-            </div>
-            <!-- /.row -->
+    <div class="contact-wrapper montserrat">
+        <div class="contact-content">
+            <h1 class="contact-header text-center alegreya">cyber message <button id="submit-btn" type="button" class="btn">
+                <i class="fa fa-paper-plane"></i>
+            </button></h1>
+            <form action="#" method="post">
+                Name
+                <br />
+                <input class="input-field" type="text" name="fullname" placeholder="Walter Bishop" required="required" autofocus="autofocus"
+                />
+                <br /> Email
+                <br />
+                <input class="input-field" type="email" name="email" placeholder="thebish@fringe.com" required="required" />
+                <br /> Message
+                <br />
+                <textarea class="input-field" name="message" rows="12" cols="80" placeholder="I'm quite perspicacous. Let's work together!" required="required"></textarea>
+                <br />
+            </form>
         </div>
-        <!-- /.about -->
     </div>
-    <!-- /.wrapper -->
 
     <footer class="footer-div navbar-fixed-bottom">
         <div class="media-bar text-center">
@@ -151,6 +97,9 @@
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <!-- Bootstrap JavaScript (always goes after jQuery CDN) -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
