@@ -78,31 +78,36 @@ nav.navbar.navbar-inverse {
 .contact-content {
     width: 100%;
     margin: auto;
-    padding-top: 2%;
+    padding-top: 30px;
     height: 100%;
 }
 
 form {
     width: 30%;
     margin: auto;
-    margin-top: 17px;
+    margin-top: 20px;
 }
 
-.input-field {
+label {
+    font-weight: 100;
+    margin-bottom: -10px;
+}
+
+input, textarea {
     width: 100%;
     margin: 7px 0 20px;
-    padding: 7px;
-    font-size: 12px;
+    padding: 10px 13px;
+    font-size: 13px;
     line-height: 14px;
     border: 1px solid #ddd;
-    border-radius: 2px;
+    border-radius: 3px;
     /* color: #4aaaa5; */
     color: black;
     font-weight: 300;
 }
 
 input::placeholder {
-    color: rgb(187, 187, 187);
+    color: rgb(187, 187, 187) !important;
 }
 
 input:focus {
@@ -110,9 +115,13 @@ input:focus {
     box-shadow: none;
 }
 
+textarea {
+    resize: none;
+    line-height: 19px;
+}
+
 textarea::placeholder {
-    color: rgb(187, 187, 187);
-    line-height: 17px;
+    color: rgb(187, 187, 187) !important;
 }
 
 svg {
@@ -166,6 +175,17 @@ svg {
     background-color: rgb(61, 61, 61);
 } */
 
+@media only screen and (max-width: 1114px) {
+    .contact-content h1 {
+        width: 24%;
+        margin: 20px auto 0;
+    }
+
+    form {
+        width: 34%;
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .navbar-inverse li {
         display: inline-block;
@@ -174,7 +194,12 @@ svg {
         width: 100%;
     }
 
+    .contact-content h1 {
+        width: 60%;
+        margin: 20px auto 0;
+    }
+
     form {
-        width: 70%;
+        width: 60%;
     }
 }

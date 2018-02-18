@@ -1,7 +1,32 @@
 $(() => {
+    // ALL PAGES
+    // =====================================================================================
     $('[data-toggle="tooltip"]').tooltip();
-    $("#carousel-example-genereic").carousel();
+
+    // HOME PAGE
+    // =====================================================================================
     $("#hire-me-btn").on('click', function() {
-        window.location.href = './contact.html';
+        window.location.assign('/contact');
+    });
+
+    // CONTACT PAGE
+    $("#contact-form").on('submit', (e) => {
+        e.preventDefault();
+
+        const formData = {
+            name: $("#user-name").val().trim(),
+            email: $("#user-email").val().trim().toLowerCase(),
+            message: $("#user-message").val().trim()
+        };
+
+        axios.post('/formProcess', formData)
+        .then(response => {
+            console.log('success');
+            console.log(response);
+        })
+        .catch(err => {
+            console.log('fail');
+            console.error(err);
+        });
     });
 });
