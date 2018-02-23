@@ -53,6 +53,7 @@ nav.navbar.navbar-inverse {
 .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: rgb(37, 37, 37);
+    /* border-bottom: 3px solid rgb(4, 157, 165); */
 }
 
 .navbar.center .navbar-inner {
@@ -102,13 +103,43 @@ nav.navbar.navbar-inverse {
 }
 
 .connect-wrapper {
-    display: grid;
-    justify-content: center;
-    align-content: center;
+    width: 80%;
+    margin: 30px auto;
 }
+
+/* .circle-container {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    padding: 2.8em; */
+        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+        /* border: dashed 1px; */
+    /* border-radius: 50%;
+    margin: 1.75em auto 0;
+} */
+
+/* .circle-container div {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3.6em;
+    height: 4em;
+    margin: -2em;
+} */
+
+/* .circle-container button { display: block; width: 100%; }
+.deg0 { transform: rotate(0deg) translate(12em) rotate(-0deg); } /* 12em = half the width of the wrapper */
+.deg60 { transform: rotate(60deg) translate(12em) rotate(-60deg); }
+.deg120 { transform: rotate(120deg) translate(12em) rotate(-120deg); }
+.deg180 { transform: rotate(180deg) translate(12em) rotate(-180deg); }
+.deg240 { transform: rotate(240deg) translate(12em) rotate(-240deg); }
+.deg300 { transform: rotate(300deg) translate(12em) rotate(-300deg); } */
 
 .connect {
     padding: 5px;
+    margin-bottom: 40px;
 }
 
 button {

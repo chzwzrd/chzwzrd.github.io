@@ -29,4 +29,30 @@ $(() => {
             console.error(err);
         });
     });
+
+    $("#slide").addClass('show');
+
+    $(".hero-content").on('mouseenter', () => {
+        $("#slide").addClass('show');
+    });
+
+    $(".hero-content").on('mouseleave', () => {
+        $("#slide").removeClass('show');
+    });
+
+    // function handleNavHover(element, elementDot) {
+    //     if (!$(element).hasClass('active') && $(window).width() > '1140') {
+    //         $(element).on('mouseenter', () => {
+    //             $(elementDot).css('display', 'unset');
+    //         });
+    //         $(element).on('mouseleave', () => {
+    //             $(elementDot).css('display', 'none');
+    //         });
+    //     }
+    // }
+
+    // handleNavHover(".home-link", ".home-dot");
+    // handleNavHover(".about-link", ".about-dot");
+    // handleNavHover(".portfolio-link", ".portfolio-dot");
+    // handleNavHover(".contact-link", ".contact-dot");
 });

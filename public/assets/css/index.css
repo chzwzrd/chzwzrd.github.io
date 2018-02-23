@@ -1,73 +1,30 @@
-body, html {
-    height: 100%;
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('./fonts/webfontkit-20180223-142418/gotham-book-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20180223-142418/gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.lobster {
-     font-family: 'Lobster',
-     'Berkshire Swash',
-     'Corben',
-     'Libre Barcode 128 Text',
-     'Zilla Slab Highlight',
-     'Special Elite',
-     'Oleo Script Swash Caps',
-     'Nixie One',
-     'Metamorphous',
-     'Averia Serif Libre',
-     Arial,
-     Helvetica,
-     sans-serif;
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('./fonts/webfontkit-20180223-150041/copyfonts.com_gotham-light-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20180223-150041/copyfonts.com_gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.montserrat {
-    font-family: 'Montserrat';
-    font-weight: 100;
-    /* letter-spacing: 1.5px; */
+body {
+    background-color: white;
+    color: rgb(202, 202, 202);
+    font-family: 'gotham_lightregular';
+    letter-spacing: 3px;
 }
 
-.alegreya {
-    font-family: 'Alegreya Sans SC';
-    font-weight: 100;
-    letter-spacing: 2px;
-}
-
-nav.navbar.navbar-inverse {
-    margin-bottom: 0;
-    border-radius: 0;
+.navbar {
+    background-color: white;
+    color: rgb(194, 194, 194);
     border: none;
-    background-color: rgb(151, 146, 135);
-    box-shadow: 0 3px 10px 0 rgb(88, 88, 88);
-    z-index: 99;
-}
-
-.navbar-inverse .navbar-toggle {
-    border-color: rgba(221, 221, 221, 0.253);
-}
-
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:active,
-.navbar-inverse .navbar-toggle:focus {
-    border-color: #222;
-}
-
-.navbar-collapse {
-    border: none !important;
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    color: #f0f0f0;
-}
-
-.navbar-inverse .navbar-nav>li>a:hover {
-    /* background-color: rgb(122, 118, 109); */
-    /* background-color: rgb(148, 142, 129); */
-    background-color: rgb(141, 136, 125);
-}
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:focus,
-.navbar-inverse .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: rgb(37, 37, 37);
 }
 
 .navbar.center .navbar-inner {
@@ -81,146 +38,150 @@ nav.navbar.navbar-inverse {
 }
 
 .navbar-nav li {
+    display: flex;
     width: 100px;
+    padding: 20px 90px;
+    font-size: 12px;
 }
 
-.wrapper {
-    height: 90%;
-    background-color: rgb(228, 228, 228);
+.navbar a {
+    background-color: white !important;
+    color: rgb(194, 194, 194) !important;
 }
 
-/* .hero::before {
-    content: "";
-    display: block;
-    background-image: url('/img/signature.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.1;
-    background-color: rgb(0, 183, 255);
-} */
-
-.hero {
-    /* width: 50%; */
-    height: 100%;
-    background-image: url('../img/background/slider-main5.jpg');
-    background-size: cover;
-    background-position: center;
-    /* background-position: 70% 100%; */
-    background-repeat: no-repeat;
-    position: relative;
-    /* position: absolute; */
+.navbar a:hover {
+    background-color: white !important;
+    color: rgb(156, 156, 156) !important;
 }
 
-.hero::after {
-    content: "";
-    display: block;
-    opacity: .4;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: black;
+.navbar .dot {
+    display: none;
+    margin-top: 12px;
+    font-size: 20px;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: white;
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 14%;
+.navbar .active .dot {
+    display: unset;
+}
+
+.navbar .home-dot {
+    /* width: 80px !important; */
+    /* border-bottom: 1px solid rgb(3, 219, 219); */
+    color: rgb(214, 212, 206);
+}
+
+.navbar .about-dot {
+    color: rgb(228, 180, 23);
+}
+
+.navbar .portfolio-dot {
+    color: rgb(23, 228, 184);
+}
+
+.navbar .contact-dot {
+    color: rgb(200, 212, 19);
+}
+
+.navbar a[disabled] {
+    pointer-events: none;
 }
 
 .hero h1 {
-    /* font-weight: bold; */
-    font-size: 60px;
-    /* padding-top: 220px; */
-    text-shadow: 2px 2px 20px rgb(78, 78, 78);
-    margin-bottom: -5px;
-    letter-spacing: 1px;
+    margin: 15% 0px 10px;
+    line-height: 50px;
+    letter-spacing: 4px;
 }
 
-.hero hr {
-    width: 10%;
-    margin-top: 40px;
-    border: 1px solid white;
-    border-radius: 50%;
+.hero #hire-me-div {
+    position: relative;
+    overflow: hidden;
+    width: 120px;
+    height: 100px; 
+    margin: auto;
 }
 
-.hero #hire-me-btn {
-    color: white;
-    width: 200px;
-    margin-top: 27px;
-    background: none;
-    border: 1px solid rgba(255, 255, 255, 0.712);
-    padding-top: -10px;
-    padding-bottom: -10px;
-    padding-left: 25px;
+.hero #slide {
+    position: absolute;
+    left: -120px;
+    width: 100%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+.hero #slide button {
+    border: none;
+    background-color: white;
+    color: inherit;
+    padding: 5px 10px;
+    border-bottom: 10px solid rgb(214, 212, 206);
     border-radius: 0;
-    /* color: rgb(126, 126, 126); */
-    /* box-shadow: 0 1px 10px 0 rgb(78, 78, 78); */
-    /* font-family: 'Helvetica Neue'; */
-    font-weight: lighter;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
 }
 
-.hero #hire-me-btn:focus,
-.hero #hire-me-btn:active,
-.hero #hire-me-btn:visited {
-    color: white;
+.hero #slide.show {
+    left: 0px;
+    transition: 1s;
 }
 
-.hero #hire-me-btn:hover {
-    background: white;
-    color: rgb(126, 126, 126);
-    font-weight: normal;
-}
-
-.footer {
-    width: 100%;
-    height: 58px;
-    /* Set the fixed height of the footer here */
-    line-height: 60px;
-    /* Vertically center the text there */
-    background-color: #222;
-    text-align: center;
-}
-
-.media-bar {
-    width: 100%;
-    height: 32px;
-    /* background-color: rgb(59, 59, 59); */
-    background-color: rgb(51, 51, 51);
-}
-
-.icons-div {
-    padding-top: 4.5px;
-}
-
-.connect-icon {
-    width: 22px;
-    margin: auto 15px;
-}
-
-/* .icons-div a +.tooltip.top>.tooltip-inner,
-.icons-div a+.tooltip.top>.tooltip-arrow {
-    background-color: rgb(61, 61, 61);
-} */
-
-@media only screen and (max-width: 767px) {
-
-    .navbar-inverse li {
-        display: inline-block;
-        margin: 0;
+@media only screen and (max-width: 1140px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        /* margin-bottom: -5%; */
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>.array-open,
+    .navbar-nav>.array-close {
+        display: none;
+    }
+    .navbar-nav>li {
+        display: inherit;
+        /* display: block; */
         padding: 0;
-        width: 100%;
+        float: none;
+    }
+    .navbar-nav>.active>a {
+        width: auto !important;
+        margin: auto !important;
+        border-bottom: 1px solid rgb(214, 212, 206);
+    }
+    .navbar-nav>.active>.dot {
+        display: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        margin-bottom: -5%;
     }
 
+    .navbar-nav>li {
+        display: block;
+    }
 }

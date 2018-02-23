@@ -18,7 +18,7 @@
 </head>
 <body>
     
-    <nav class='navbar navbar-inverse center alegreya'>
+    <nav class='navbar navbar-default center gotham'>
         <div class='container-fluid'>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
@@ -32,17 +32,29 @@
 
             <div class="collapse navbar-collapse navbar-inner" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li class="array-open">
+                        <a disabled>[</a>
+                    </li>
+                    <li class="active home-link">
+                        <span class="dot home-dot">&bull;</span>
+                        <!-- <span class="dot home-dot">&bull;</span> -->
+                        <!-- <span class="dot home-dot">&deg;</span> -->
                         <a href='./index.html'>home</a>
                     </li>
-                    <li>
+                    <li class="about-link">
+                        <span class="dot about-dot">&bull;</span>
                         <a href='./about.html'>about</a>
                     </li>
-                    <li>
+                    <li class="portfolio-link">
+                        <span class="dot portfolio-dot">&bull;</span>
                         <a href='./portfolio.html'>portfolio</a>
                     </li>
-                    <li>
+                    <li class="contact-link">
+                        <span class="dot contact-dot">&bull;</span>
                         <a href='./contact.html'>contact</a>
+                    </li>
+                    <li class="array-close">
+                        <a disabled>]</a>
                     </li>
                 </ul>
             </div>
@@ -52,13 +64,18 @@
     <div class="wrapper">
          <div class="hero text-center">
              <div class="hero-content">
-                <h1 class='lobster text-responsive'>&lt;melodie chi /&gt;</h1>
-                <button id='hire-me-btn' class='btn btn-default alegreya'>HIRE ME</button>
+                <h1 class='gotham text-responsive'>&lt; melodie chi /&gt;</h1>
+                <div id="hire-me-div">
+                    <span id="slide">
+                        <button class="btn btn-default">HIRE ME</button>
+                    </span>
+                </div>
+                <!-- <button id='hire-me-btn' class='btn btn-default alegreya'>HIRE ME</button> -->
              </div>
          </div>
     </div>
 
-    <div class="footer-div navbar-fixed-bottom">
+    <!-- <div class="footer-div navbar-fixed-bottom">
         <div class="media-bar text-center">
             <div class="icons-div">
                 <a href="https://github.com/chzwzrd/" target="_blank" data-toggle="tooltip" data-placement="top" title="Github">
@@ -78,7 +95,7 @@
                 <span class='text-muted'>&copy; 2018 Melodie Chi</span>
             </div>
         </footer>
-    </div>
+    </div> -->
 
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
