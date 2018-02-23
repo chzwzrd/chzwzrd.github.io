@@ -80,7 +80,7 @@ body {
     color: rgb(214, 212, 206);
 }
 
-.navbar .about-dot {
+/* .navbar .about-dot {
     color: rgb(228, 180, 23);
 }
 
@@ -90,7 +90,7 @@ body {
 
 .navbar .contact-dot {
     color: rgb(200, 212, 19);
-}
+} */
 
 .navbar a[disabled] {
     pointer-events: none;
