@@ -37,6 +37,16 @@ body {
     vertical-align: top;
 }
 
+.navbar-nav .array-open {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: -60px;
+}
+
+.navbar-nav .array-close {
+    margin-right: 0;
+    padding-right: 0;
+}
 .navbar-nav li {
     display: flex;
     width: 100px;
@@ -183,5 +193,9 @@ body {
 
     .navbar-nav>li {
         display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
     }
 }
