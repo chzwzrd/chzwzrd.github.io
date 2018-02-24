@@ -91,13 +91,8 @@ body {
     letter-spacing: 1px;
 }
 
-.about .bio-header {
-    margin: -2% auto 0;
-    /* border: 1px solid white; */
-}
-
 .about .bio-content {
-    margin-top: -20px;
+    margin-top: -2.5rem;
     position: relative;
     padding: 20px;
 }
@@ -107,25 +102,9 @@ body {
 }
 #comingSoonModal .close {
     position: absolute;
-    top: 10px;
+    top: 5px;
     right: 10px;
-    font-size: 30px;
-    color: white;
-    margin: 0;
-    padding: 0;
-    width: 10px;
-    height: 10px;
-    border: 2px solid rgb(226, 14, 14);
-    border-radius: 50%;
-    opacity: 1;
-}
-
-#comingSoonModal .close:hover {
-    font-size: 35px;
-    border: none;
-    color: rgb(226, 14, 14);
-    top: -2px;
-    right: 14px;
+    font-size: 18px;
 }
 
 #comingSoonModal .modal-content {
@@ -138,14 +117,12 @@ body {
     height: 100px;
 }
 
-
-
 .about #meowl-div {
     position: relative;
     overflow: hidden;
     width: 200px;
     height: 200px; 
-    margin: 0 auto -30px;
+    margin: 0 auto -3rem;
 }
 
 .about #meowl-slide {
