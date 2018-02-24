@@ -122,15 +122,15 @@ body {
 
 .about #meowl-slide {
     position: absolute;
-    top: -100px;
+    top: -150px;
     width: 100%;
     margin: 0 auto;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .about #meowl-slide.show {
     top: 10px;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .about .meowl {
@@ -147,12 +147,16 @@ body {
 }
 
 .about .bio-para {
+    display: flex;
     width: 60%;
     margin: 0 auto;
     font-weight: 200;
-    text-align: justify;
-    text-justify: distribute-all-lines;
+    /* text-align: justify; */
+    /* text-justify: distribute-all-lines; */
     position: relative;
+    justify-content: space-between;
+    letter-spacing: 1.2px;
+    font-size: 13.2px;
 }
 
 .about .bio-para a {
@@ -163,6 +167,7 @@ body {
 
 .about p {
     margin: 10px;
+    width: max-content;
 }
 
 #ket-div {
@@ -245,6 +250,15 @@ body {
     .collapse.in{
         display:block !important;
     }
+
+    .about .bio-para {
+        display: initial;
+    }
+
+    .about p {
+        width: 60%;
+        margin: 10px auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -256,11 +270,15 @@ body {
         display: block;
     }
 
-    .about .bio-para {
+    #ket-slide.show {
+        bottom: 30px;
+    }
+
+    .about p {
         width: 80%;
     }
 
-    #ket-slide.show {
-        bottom: 30px;
+    #comingSoonModal .modal-content {
+        width: 65%;
     }
 }

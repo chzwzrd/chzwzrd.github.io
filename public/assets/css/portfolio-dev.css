@@ -75,7 +75,7 @@ body {
 }
 
 .navbar .portfolio-dot {
-    color: #ffb611;
+    color: #ff893e;
 }
 
 .navbar a[disabled] {
@@ -83,25 +83,107 @@ body {
 }
 
 .gallery {
-    display: flex;
-    flex-flow: row wrap;
-    padding-left: 0;
+    width: 55%;
+    margin: auto;
+	padding-top: 15px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 .gallery figure {
-    width: 400px;
-    height: 250px;
+    margin-bottom: -5px;
+    position: relative;
 }
 
+.gallery .overlay {
+    position: absolute;
+    top: 0; bottom: 40px; left: 0; right: 0;
+    background-color: white;
+    opacity: 0.9;
+    /* border: 1px solid rgb(218, 218, 218); */
+}
+
+/* .gallery .overlay:hover {
+    background-color: white;
+    opacity: 0;
+} */
+
 .gallery img {
-    width: 100%;
-    height: auto;
+	width: 320px;
+    height: 190px;
+}
+
+.gallery img:hover {
+	opacity: 0.95;
 }
 
 figcaption {
-    width: 100%;
+    font-size: 12px;
+    letter-spacing: 2px;
+	width: 320px;
+	height: 40px;
+	padding-top: 3.6%;
+	position: relative;
     bottom: 50px;
-    padding-top: 3.8%;
+    /* color: rgb(131, 130, 130);
+    background-color: white; */
+	color: #eee;
+    /* background: #464646; */
+    background: grey;
+}
+
+@media only screen and (max-width: 1140px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        /* margin-bottom: -5%; */
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>.array-open,
+    .navbar-nav>.array-close {
+        display: none;
+    }
+    .navbar-nav>li {
+        display: inherit;
+        /* display: block; */
+        padding: 0;
+        float: none;
+    }
+    .navbar-nav>.active>a {
+        width: auto !important;
+        margin: auto !important;
+        border-bottom: 1px solid rgb(214, 212, 206);
+    }
+    .navbar-nav>.active>.dot {
+        display: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display:block !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {

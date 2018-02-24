@@ -100,6 +100,7 @@ body {
     margin: 15% 0px 10px;
     line-height: 50px;
     letter-spacing: 4px;
+    font-size: 33px;
 }
 
 .hero #hire-me-div {
@@ -112,7 +113,7 @@ body {
 
 .hero #slide {
     position: absolute;
-    left: -120px;
+    left: -140px;
     width: 100%;
     margin: 0 auto;
     transition: 1s;

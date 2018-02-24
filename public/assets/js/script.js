@@ -30,9 +30,11 @@ $(() => {
         });
     });
 
-    $("#slide").addClass('show');
-    $("#meowl-slide").addClass('show');
-
+    setTimeout(() => {
+        $("#slide").addClass('show');
+        $("#meowl-slide").addClass('show');
+    }, 500);
+    
     $(".hero-content").on('mouseenter', () => {
         $("#slide").addClass('show');
     });
@@ -49,7 +51,8 @@ $(() => {
         $("#comingSoonModal2").modal();
     });
     $(".dev-block").on('click', () => {
-        window.location.assign('../../portfolio-dev.html');
+        $("#comingSoonModal2").modal();
+        // window.location.assign('../../portfolio-dev.html');
     });
     $(".art-block").on('click', () => {
         $("#comingSoonModal2").modal();
