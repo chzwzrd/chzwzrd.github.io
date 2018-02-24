@@ -32,8 +32,9 @@ $(() => {
 
     setTimeout(() => {
         $("#slide").addClass('show');
-        $("#meowl-slide").addClass('show');
     }, 500);
+
+    $("#meowl-slide").addClass('show');
     
     $(".hero-content").on('mouseenter', () => {
         $("#slide").addClass('show');

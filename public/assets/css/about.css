@@ -147,15 +147,15 @@ body {
 }
 
 .about .bio-para {
-    display: flex;
-    width: 60%;
+    /* display: flex; */
+    width: 47%;
     margin: 0 auto;
     font-weight: 200;
     /* text-align: justify; */
     /* text-justify: distribute-all-lines; */
     position: relative;
     justify-content: space-between;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.6px;
     font-size: 13.2px;
 }
 
@@ -166,15 +166,16 @@ body {
 }
 
 .about p {
-    margin: 10px;
-    width: max-content;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 #ket-div {
     position: relative;
     overflow: hidden;
     width: 200px;
-    height: 130px; 
+    height: 110px; 
     margin: -10px auto;
 }
 
@@ -252,12 +253,11 @@ body {
     }
 
     .about .bio-para {
-        display: initial;
+        width: 55%;
     }
 
-    .about p {
-        width: 60%;
-        margin: 10px auto;
+    #ket-div {
+        height: 130px;
     }
 }
 
@@ -274,8 +274,8 @@ body {
         bottom: 30px;
     }
 
-    .about p {
-        width: 80%;
+    .about .bio-para {
+        width: 90%;
     }
 
     #comingSoonModal .modal-content {
