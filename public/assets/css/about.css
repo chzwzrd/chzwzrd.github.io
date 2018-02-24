@@ -91,33 +91,18 @@ body {
     letter-spacing: 1px;
 }
 
-.bio-header {
+.about .bio-header {
     margin: -2% auto 0;
     /* border: 1px solid white; */
 }
 
-.about h1 {
-    font-size: 40px;
-    letter-spacing: 1px;
-    font-weight: 200;
-    margin-right: -20px;
-}
-
-#emoji {
-    width: 60px;
-    margin-left: -10px;
-    padding-bottom: 5px;
-    /* transform: scaleX(-1) rotate(5deg); */
-    transform: rotate(3deg);
-}
-
-.bio-content {
+.about .bio-content {
     margin-top: 0;
     position: relative;
     padding: 20px;
 }
 
-#bio-pic {
+.about #meowl {
     width: 137px;
     height: 137px;
     background-image: url("../img/bio/meowl.png");
@@ -135,14 +120,45 @@ body {
     font-weight: 200;
     text-align: justify;
     text-justify: distribute-all-lines;
+    position: relative;
 }
 
 .about .bio-para a {
+    cursor: pointer;
     color: rgb(21, 209, 200);
 }
 
 .about p {
     margin: 10px;
+}
+
+#ket-div {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 130px; 
+    margin: -10px auto;
+}
+
+#ket-slide {
+    position: absolute;
+    bottom: -200px;
+    width: 100%;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+#ket-slide.show {
+    bottom: 20px;
+    transition: 0.5s;
+}
+
+.kets {
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    margin-left: 25px;
+    opacity: 0.4;
 }
 
 @media only screen and (max-width: 1140px) {
@@ -209,5 +225,9 @@ body {
 
     .about .bio-para {
         width: 80%;
+    }
+
+    #ket-slide.show {
+        bottom: 30px;
     }
 }

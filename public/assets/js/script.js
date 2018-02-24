@@ -40,6 +40,10 @@ $(() => {
         $("#slide").removeClass('show');
     });
 
+    $(".ket-link").on('click', () => {
+        $("#ket-slide").toggleClass('show');
+    });
+
     // function handleNavHover(element, elementDot) {
     //     if (!$(element).hasClass('active') && $(window).width() > '1140') {
     //         $(element).on('mouseenter', () => {
