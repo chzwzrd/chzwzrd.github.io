@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('./fonts/webfontkit-20180223-142418/gotham-book-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20180223-142418/gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('./fonts/webfontkit-20180223-150041/copyfonts.com_gotham-light-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20180223-150041/copyfonts.com_gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+    color: rgb(202, 202, 202);
+    font-family: 'gotham_lightregular';
+    letter-spacing: 3px;
+}
+
+.navbar {
+    background-color: white;
+    color: rgb(194, 194, 194);
+    border: none;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-nav .array-open {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: -60px;
+}
+
+.navbar-nav .array-close {
+    margin-right: 0;
+    padding-right: 0;
+}
+.navbar-nav li {
+    display: flex;
+    width: 100px;
+    padding: 20px 90px;
+    font-size: 12px;
+}
+
+.navbar a {
+    background-color: white !important;
+    color: rgb(194, 194, 194) !important;
+}
+
+.navbar a:hover {
+    background-color: white !important;
+    color: rgb(156, 156, 156) !important;
+}
+
+.navbar .dot {
+    display: none;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.navbar .active .dot {
+    display: unset;
+}
+
+.navbar .portfolio-dot {
+    color: #ffb611;
+}
+
+.navbar a[disabled] {
+    pointer-events: none;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 0;
+}
+
+.gallery figure {
+    width: 400px;
+    height: 250px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    width: 100%;
+    bottom: 50px;
+    padding-top: 3.8%;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        margin-bottom: -5%;
+    }
+
+    /* .navbar-nav>li {
+        display: block;
+    } */
+
+    .navbar-nav>.active>a {
+        width: auto !important;
+        margin: auto !important;
+        margin-right: -20px !important;
+        border-bottom: 1px solid rgb(214, 212, 206);
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .navbar-nav>li {
+       padding: 0;
+       letter-spacing: 1px;
+       width: 22%;
+    }
+}

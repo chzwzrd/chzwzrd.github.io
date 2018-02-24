@@ -75,7 +75,8 @@ body {
 }
 
 .navbar .about-dot {
-    color: rgb(21, 209, 200);
+    /* color: rgb(21, 209, 200); */
+    color: #00d2c8;
 }
 
 .navbar a[disabled] {
@@ -99,12 +100,6 @@ body {
 
 #comingSoonModal {
     margin-top: 20rem;
-}
-#comingSoonModal .close {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    font-size: 18px;
 }
 
 #comingSoonModal .modal-content {
@@ -162,7 +157,8 @@ body {
 
 .about .bio-para a {
     cursor: pointer;
-    color: rgb(21, 209, 200);
+    /* color: rgb(21, 209, 200); */
+    color: #00d2c8;
 }
 
 .about p {

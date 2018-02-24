@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -12,7 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
     <!-- External CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="./public/assets/css/about.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/assets/css/portfolio.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/assets/css/portfolio-dev.css" />
 </head>
 
 <body>
@@ -40,17 +42,17 @@
                         <!-- <span class="dot home-dot">&deg;</span> -->
                         <a href='./index.html'>home</a>
                     </li>
-                    <li class="active about-link">
+                    <li class="about-link">
                         <span class="dot about-dot">&bull;</span>
                         <a href='./about.html'>about</a>
                     </li>
-                    <li class="portfolio-link">
+                    <li class="active portfolio-link">
                         <span class="dot portfolio-dot">&bull;</span>
                         <a href='./portfolio.html'>portfolio</a>
                     </li>
                     <li class="contact-link">
                         <span class="dot contact-dot">&bull;</span>
-                        <a href='#' disabled>contact</a>
+                        <a href='./contact.html'>contact</a>
                     </li>
                     <li class="array-close">
                         <a disabled>]</a>
@@ -60,39 +62,60 @@
         </div>
     </nav>
 
-    <div class="wrapper about">
-        <div class="bio-content">
-            <div class="overlay"></div>
-            <div id="meowl-div">
-                <div id="meowl-slide" class="meowl"></div>
-            </div>
+    <div class="portfolio wrapper">
+        <div class="dev-div">
         
-            <div class="bio-para montserrat">
-                <p>
-                    Melodie is a human being who doesn't know how to sufficiently describe herself or write a short personal biography. She often
-                    finds herself thinking way too much about things that, in reality, will never affect her.
-                </p>
-                <p>
-                    She finds herself drawn toward
-                    <a href="https://residualmelancholy.wordpress.com/" target="_blank">creative writing</a>, psychology, philosophy, singing-songwriting, doodling,
-                    <a data-toggle="modal" data-target="#comingSoonModal">design</a>, and of course, web development.
-                </p>
-                <p>
-                    She plans to graduate from the UCI Coding Bootcamp, land a job, move to San Diego with her two <a class="ket-link">furry kids</a>, and work remotely
-                    while playing guitar and traveling with the sea breeze.
-                </p>
+            <!-- Gallery -->
+            <div class="gallery">
+                <!-- Starched -->
+                <a href="https://sphagan1088.github.io/Project-1/" target="_blank">
+                    <figure id="starched">
+                        <img src="./public/assets/img/portfolio/starched2.png" alt="starched interview outfit web app" />
+                        <figcaption class="text-center">Starched</figcaption>
+                    </figure>
+                </a>
+                <!-- GIPHY API -->
+                <a href="https://chzwzrd.github.io/GIPHY-API/click-event/" target="_blank">
+                    <figure id="giphy">
+                        <img src="./public/assets/img/portfolio/giphy.gif" alt="giphy api application" />
+                        <figcaption class="text-center">GIPHY API</figcaption>
+                    </figure>
+                </a>
+                <!-- The Trains-Atlantic -->
+                <a href="https://chzwzrd.github.io/Train-Scheduler/greyscale/" target="_blank">
+                    <figure id="train-scheduler">
+                        <img src="./public/assets/img/portfolio/train-times2.jpg" alt="train scheduler" />
+                        <figcaption class="text-center">Train Scheduler</figcaption>
+                    </figure>
+                </a>
+                <!-- Hangman Style -->
+                <a href="https://chzwzrd.github.io/Hangman-Game/" target="_blank">
+                    <figure id="hangman">
+                        <img src="./public/assets/img/portfolio/hangman_edit1.png" alt="hangman game gangnam style" />
+                        <figcaption class="text-center">Hangman Style</figcaption>
+                    </figure>
+                </a>
+                <!-- Crystal Collector -->
+                <a href="https://chzwzrd.github.io/Crystal-Collector-Game/" target="_blank">
+                    <figure id="crystal-collector">
+                        <img src="./public/assets/img/portfolio/crystal.png" alt="glowing green crystal" />
+                        <figcaption class="text-center">Crystal Collector</figcaption>
+                    </figure>
+                </a>
+                <!-- Trivia Game -->
+                <a href="https://chzwzrd.github.io/Trivia-Game-Basic/" target="_blank">
+                    <figure id="trivia">
+                        <img src="./public/assets/img/portfolio/triviagame2.jpg" alt="trivia game" />
+                        <figcaption class="text-center">Trivia Game</figcaption>
+                    </figure>
+                </a>
             </div>
-        </div>
-    </div>
-
-    <div id="ket-div">
-        <div id="ket-slide">
-            <img class="kets" src="./public/assets/img/bio/meowl-kets.png" />
+            <!-- /.gallery -->
         </div>
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="comingSoonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="comingSoonModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">

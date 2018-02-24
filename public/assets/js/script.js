@@ -45,6 +45,31 @@ $(() => {
         $("#ket-slide").toggleClass('show');
     });
 
+    $(".design-block").on('click', () => {
+        $("#comingSoonModal2").modal();
+    });
+    $(".dev-block").on('click', () => {
+        window.location.assign('../../portfolio-dev.html');
+    });
+    $(".art-block").on('click', () => {
+        $("#comingSoonModal2").modal();
+    });
+    $(".photography-block").on('click', () => {
+        $("#comingSoonModal2").modal();
+    });
+
+    $("#comingSoonModal").on('shown.bs.modal', () => {
+        setTimeout(() => {
+            $("#comingSoonModal").modal('hide');
+        }, 1000);
+    });
+
+    $("#comingSoonModal2").on('shown.bs.modal', () => {
+        setTimeout(() => {
+            $("#comingSoonModal2").modal('hide');
+        }, 1000);
+    });
+
     // function handleNavHover(element, elementDot) {
     //     if (!$(element).hasClass('active') && $(window).width() > '1140') {
     //         $(element).on('mouseenter', () => {
