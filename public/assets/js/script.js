@@ -82,6 +82,17 @@ $(() => {
         $(this).siblings('figcaption').css('opacity', '0');
     });
 
+    // CONTACT PAGE
+    // =====================================================================================
+    $(".connect-div .resume button").on('click', () => {
+        $("#comingSoonModal3").modal('show');
+        $("#comingSoonModal3").on('shown.bs.modal', () => {
+            setTimeout(() => {
+                $("#comingSoonModal3").modal('hide');
+            }, 1000);
+        });
+    });
+
     // $(".gallery figure").hover(function() { // Mouse over
     //     $(this).siblings().stop().fadeTo(160, 0.6);
     //     $(this).parent().siblings().stop().fadeTo(160, 0.3);
@@ -107,7 +118,7 @@ $(() => {
     // handleNavHover(".about-link", ".about-dot");
     // handleNavHover(".portfolio-link", ".portfolio-dot");
     // handleNavHover(".contact-link", ".contact-dot");
-    
+
     // $(window).unload(function() {
     //     sessionStorage.removeItem('hasShownModal');
     // });

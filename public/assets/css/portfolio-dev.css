@@ -115,16 +115,16 @@ body {
 }
 
 #workInProgressModal .modal-content p a {
-    color: #00d2c8;
+    color: #c0c0c0;
 }
 
 .portfolio {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .gallery {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 	padding: 0px 20px 40px;
     display: flex;
@@ -154,7 +154,8 @@ body {
 
 figcaption {
     opacity: 0;
-    color: rgb(190, 190, 190);
+    /* color: rgb(190, 190, 190); */
+    color: rgb(163, 163, 163);
     font-size: 12px;
     letter-spacing: 1px;
     position: absolute;
