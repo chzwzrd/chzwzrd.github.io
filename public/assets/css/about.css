@@ -54,6 +54,10 @@ body {
     font-size: 12px;
 }
 
+.navbar-nav li a {
+    padding-left: 5px;
+}
+
 .navbar a {
     background-color: white !important;
     color: rgb(194, 194, 194) !important;

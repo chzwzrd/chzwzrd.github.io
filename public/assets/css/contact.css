@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('./fonts/webfontkit-20180223-142418/gotham-book-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20180223-142418/gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_lightregular';
+    src: url('./fonts/webfontkit-20180223-150041/copyfonts.com_gotham-light-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-20180223-150041/copyfonts.com_gotham-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+    color: rgb(202, 202, 202);
+    font-family: 'gotham_lightregular';
+    letter-spacing: 3px;
+}
+
+.navbar {
+    background-color: white;
+    color: rgb(194, 194, 194);
+    border: none;
+}
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar-nav .array-open {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: -60px;
+}
+
+.navbar-nav .array-close {
+    margin-right: 0;
+    padding-right: 0;
+}
+.navbar-nav li {
+    display: flex;
+    width: 100px;
+    padding: 20px 90px;
+    font-size: 12px;
+}
+
+.navbar-nav li a {
+    padding-left: 5px;
+}
+
+.navbar a {
+    background-color: white !important;
+    color: rgb(194, 194, 194) !important;
+}
+
+.navbar a:hover {
+    background-color: white !important;
+    color: rgb(156, 156, 156) !important;
+}
+
+.navbar .dot {
+    display: none;
+    margin-top: 12px;
+    font-size: 20px;
+}
+
+.navbar .active .dot {
+    display: unset;
+}
+
+.navbar .about-dot {
+    /* color: rgb(21, 209, 200); */
+    color: #00d2c8;
+}
+
+.navbar a[disabled] {
+    pointer-events: none;
+}
+
+.contact {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1%;
+    font-weight: 300;
+    color: rgb(163, 163, 163);
+    letter-spacing: 1px;
+}
+
+.contact-wrapper {
+    height: 90%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+.contact-content {
+    width: 100%;
+    margin: auto;
+    padding-top: 45px;
+    height: 100%;
+}
+
+.contact-header {
+    font-size: 40px;
+}
+
+.fa-lightbulb,
+.fa-child,
+.fa-bolt,
+.fa-users,
+.fa-heart,
+.fa-coffee {
+    font-size: 24px;
+    margin-left: 7px;
+}
+
+.contact-content hr {
+    width: 45%;
+    font-weight: lighter;
+}
+
+.connect-wrapper {
+    width: 80%;
+    margin: 30px auto;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    /* background: #4aaaa5; */
+    /* background-color: rgb(157, 174, 175); */
+    /* color: rgb(250, 250, 250); */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 4px;
+    font-size: 20px;
+}
+
+button:hover {
+    /* background: #50b3a9; */
+    /* background-color: rgb(147, 164, 165); */
+}
+
+@media only screen and (max-width: 1140px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        /* margin-bottom: -5%; */
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>.array-open,
+    .navbar-nav>.array-close {
+        display: none;
+    }
+    .navbar-nav>li {
+        display: inherit;
+        /* display: block; */
+        padding: 0;
+        float: none;
+    }
+    .navbar-nav>.active>a {
+        width: auto !important;
+        margin: auto !important;
+        border-bottom: 1px solid rgb(214, 212, 206);
+    }
+    .navbar-nav>.active>.dot {
+        display: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-collapse {
+        margin-bottom: -5%;
+    }
+
+    .navbar-nav>li {
+        display: block;
+    }
+}

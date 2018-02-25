@@ -54,6 +54,10 @@ body {
     font-size: 12px;
 }
 
+.navbar-nav li a {
+    padding-left: 5px;
+}
+
 .navbar a {
     background-color: white !important;
     color: rgb(194, 194, 194) !important;
@@ -74,51 +78,90 @@ body {
     display: unset;
 }
 
-.navbar .portfolio-dot {
-    color: #ff893e;
-}
+/* .navbar .portfolio-dot {
+    color: #ffb611;
+} */
 
 .navbar a[disabled] {
     pointer-events: none;
 }
 
-.gallery {
-    width: 55%;
+#workInProgressModal {
+    margin-top: 18rem;
+}
+
+.modal-backdrop.in {
+    opacity: 0.7;
+}
+
+#workInProgressModal .modal-content {
+    color: grey;
+    font-size: 13.5px;
+    letter-spacing: 0.5px;
+    padding-top: 7%;
+    width: 70%;
     margin: auto;
-	padding-top: 15px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+    height: 150px;
+}
+
+#workInProgressModal .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#workInProgressModal .modal-content p {
+    margin: 0 50px;
+}
+
+#workInProgressModal .modal-content p a {
+    color: #00d2c8;
+}
+
+.portfolio {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery {
+    width: 90%;
+    margin: 0 auto;
+	padding: 0px 20px 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .gallery figure {
-    margin-bottom: -5px;
+    padding: 15px 15px 30px;
     position: relative;
 }
-
-.gallery .overlay {
-    position: absolute;
-    top: 0; bottom: 40px; left: 0; right: 0;
-    background-color: white;
-    opacity: 0.9;
-    /* border: 1px solid rgb(218, 218, 218); */
-}
-
-/* .gallery .overlay:hover {
-    background-color: white;
-    opacity: 0;
-} */
 
 .gallery img {
 	width: 320px;
     height: 190px;
+    border-radius: 5px;
 }
 
-.gallery img:hover {
-	opacity: 0.95;
-}
+/* .gallery .details {
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 90px;
+} */
 
 figcaption {
+    opacity: 0;
+    color: rgb(190, 190, 190);
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -5px;
+}
+
+/* figcaption {
     font-size: 12px;
     letter-spacing: 2px;
 	width: 320px;
@@ -126,12 +169,13 @@ figcaption {
 	padding-top: 3.6%;
 	position: relative;
     bottom: 50px;
-    /* color: rgb(131, 130, 130);
-    background-color: white; */
-	color: #eee;
-    /* background: #464646; */
-    background: grey;
-}
+	color: rgb(158, 158, 158);
+    background-color: white;
+} */
+
+/****************
+* MEDIA QUERIES *
+****************/
 
 @media only screen and (max-width: 1140px) {
     .navbar-header {
