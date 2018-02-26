@@ -93,6 +93,8 @@ $(() => {
         });
     });
 
+    // =====================================================================================
+    
     // $(".gallery figure").hover(function() { // Mouse over
     //     $(this).siblings().stop().fadeTo(160, 0.6);
     //     $(this).parent().siblings().stop().fadeTo(160, 0.3);
