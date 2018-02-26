@@ -146,7 +146,7 @@ body {
 
 .connect-div div {
     width: 100%;
-    margin: 1% auto;
+    margin: 1.5% auto;
     text-align: center;
 }
 
@@ -275,9 +275,13 @@ body {
         padding: 0;
         float: none;
     }
+     .navbar-nav .portfolio-link {
+        margin-left: 15px;
+    }
     .navbar-nav>.active>a {
-        width: auto !important;
+        width: 77px !important;
         margin: auto !important;
+        margin-left: 30px !important;
         border-bottom: 1px solid rgb(214, 212, 206);
     }
     .navbar-nav>.active>.dot {
@@ -294,14 +298,43 @@ body {
 
 @media only screen and (max-width: 768px) {
     .navbar-collapse {
-        margin-bottom: -5%;
+        margin-bottom: -2.5%;
+    }
+
+    .navbar-nav>.active>a {
+        width: auto !important;
+        margin: auto !important;
+        margin-left: -2px !important;
+        margin-right: 7px !important;
+        border-bottom: 1px solid rgb(214, 212, 206);
+    }
+
+    .navbar-nav {
+        width: 112px;
     }
 
     .navbar-nav>li {
         display: block;
+        margin-left: 21px;
+        padding-right: 20px;
+        margin-right: -15px;
+    }
+
+     .navbar-nav .about-link {
+        margin-left: 22px;
+    }
+
+    .navbar-nav .portfolio-link {
+        margin-left: 14px;
     }
 
     #comingSoonModal3 .modal-content {
         width: 65%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .connect-div button {
+        margin-left: -5px;
     }
 }

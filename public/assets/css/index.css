@@ -174,8 +174,11 @@ body {
         padding: 0;
         float: none;
     }
+    .navbar-nav .about-link {
+        margin-left: -10px;
+    }
     .navbar-nav>.active>a {
-        width: auto !important;
+        width: 55px !important;
         margin: auto !important;
         border-bottom: 1px solid rgb(214, 212, 206);
     }
@@ -196,11 +199,45 @@ body {
         margin-bottom: -5%;
     }
 
+    .navbar-nav>.active>a {
+        width: auto !important;
+        margin: auto !important;
+        border-bottom: 1px solid rgb(214, 212, 206);
+        margin-left: 10px !important;
+        padding-right: 15px !important;
+        margin-right: 15px !important;
+    }
+
+    .navbar-nav {
+        width: 112px;
+    }
+
     .navbar-nav>li {
         display: block;
+        margin-left: 20px;
+        padding-right: 20px;
+        margin-right: -15px;
+    }
+
+    .navbar-nav .about-link {
+        margin-left: 23px;
+    }
+
+    .navbar-nav .portfolio-link {
+        margin-left: 15px;
     }
 
     .hero-content h1 {
         font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .wrapper {
+        width: 95%;
+        margin: auto;
+    }
+    .hero-content h1 {
+        font-size: 28px;
     }
 }

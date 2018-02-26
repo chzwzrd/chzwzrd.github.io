@@ -214,9 +214,16 @@ figcaption {
         padding: 0;
         float: none;
     }
+    .navbar-nav .about-link {
+        margin-left: -10px;
+    }
+    .navbar-nav .contact-link {
+        margin-left: 15px;
+    }
     .navbar-nav>.active>a {
-        width: auto !important;
+        width: 85px !important;
         margin: auto !important;
+        margin-left: 5px !important;
         border-bottom: 1px solid rgb(214, 212, 206);
     }
     .navbar-nav>.active>.dot {
@@ -232,19 +239,18 @@ figcaption {
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar-collapse {
-        margin-bottom: -5%;
-    }
-
-    /* .navbar-nav>li {
-        display: block;
-    } */
-
     .navbar-nav>.active>a {
         width: auto !important;
         margin: auto !important;
-        margin-right: -20px !important;
+        margin-left: 5px !important;
+        padding-left: 5px !important;
+        padding-right: 60px !important;
+        margin-right: 5px !important;
         border-bottom: 1px solid rgb(214, 212, 206);
+    }
+
+    .navbar-nav .contact-link {
+        margin-right: -20px;
     }
 }
 
