@@ -64,14 +64,15 @@ $(() => {
     // PORTFOLIO-DEV PAGE
     // =====================================================================================
     let hasShownModal = sessionStorage.getItem('hasShownModal');
-    // console.log(hasShownModal);
+    console.log(hasShownModal);
     if (hasShownModal === null) {
-        sessionStorage.setItem('hasShownModal', 1);
         setTimeout(() => {
             $("#workInProgressModal").modal();
         }, 200);
+        $("#workInProgressModal").on('shown.bs.modal', () => {
+            sessionStorage.setItem('hasShownModal', 1);
+        });
     }
-    // console.log(hasShownModal);
 
     $(".gallery img").on('mouseenter', function() {
         $(this).css('opacity', '0.3');
