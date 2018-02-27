@@ -168,6 +168,10 @@ body {
     font-size: 24px;
 }
 
+.connect-div a {
+    color: rgb(163, 163, 163);
+}
+
 .connect-div button {
     width: 40px;
     height: 40px;
@@ -175,13 +179,22 @@ body {
     cursor: pointer;
     font-size: 20px;
     margin-bottom: -3px;
+    pointer-events: none;
 }
 
-.phone button,
+.connect-div a p {
+    color: #cfd200;
+}
+
+.connect-div a:hover {
+    text-decoration-color: #cfd200;
+}
+
+/* .phone button,
 .location button,
 .email button {
     pointer-events: none;
-}
+} */
 
 /* button:hover {
     background: #50b3a9;

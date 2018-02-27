@@ -85,14 +85,14 @@ $(() => {
 
     // CONTACT PAGE
     // =====================================================================================
-    $(".connect-div .resume button").on('click', () => {
-        $("#comingSoonModal3").modal('show');
-        $("#comingSoonModal3").on('shown.bs.modal', () => {
-            setTimeout(() => {
-                $("#comingSoonModal3").modal('hide');
-            }, 1000);
-        });
-    });
+    // $(".connect-div .resume button").on('click', () => {
+    //     $("#comingSoonModal3").modal('show');
+    //     $("#comingSoonModal3").on('shown.bs.modal', () => {
+    //         setTimeout(() => {
+    //             $("#comingSoonModal3").modal('hide');
+    //         }, 1000);
+    //     });
+    // });
 
     // =====================================================================================
     
