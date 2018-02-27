@@ -90,7 +90,7 @@ body {
 .about {
     width: 80%;
     margin: 0 auto;
-    padding-top: 1.5%;
+    padding-top: 1.4%;
     font-weight: 300;
     color: rgb(163, 163, 163);
     letter-spacing: 1px;
@@ -172,7 +172,7 @@ body {
 
 .about p {
     margin-top: 7px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
 }
 

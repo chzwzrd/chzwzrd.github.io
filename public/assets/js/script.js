@@ -12,7 +12,7 @@ $(() => {
 
     setTimeout(() => {
         $("#slide").addClass('show');
-    }, 500);
+    }, 350);
 
     $(".hero-content").on('mouseenter', () => {
         $("#slide").addClass('show');
