@@ -168,6 +168,7 @@ body {
     cursor: pointer;
     /* color: rgb(21, 209, 200); */
     color: #00d2c8;
+    font-weight: bold;
 }
 
 .about p {
