@@ -33,7 +33,7 @@ $(() => {
     // PORTFOLIO PAGE
     // =====================================================================================
     $(".design-block").on('click', () => {
-        $("#comingSoonModal2").modal();
+        $("#comingSoonDesignModal").modal();
     });
 
     $(".dev-block").on('click', () => {

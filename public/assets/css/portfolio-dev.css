@@ -261,3 +261,13 @@ figcaption {
        width: 22%;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    #workInProgressModal .modal-content {
+        height: 160px;
+    }
+
+    #workInProgressModal .modal-content p {
+        margin: 0 30px;
+    }
+}
