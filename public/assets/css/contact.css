@@ -186,7 +186,10 @@ body {
     color: #cfd200;
 }
 
-.connect-div a:hover {
+.connect-div a:hover,
+.connect-div a:visited,
+.connect-div a:active,
+.connect-div a:focus {
     text-decoration-color: #cfd200;
 }
 
