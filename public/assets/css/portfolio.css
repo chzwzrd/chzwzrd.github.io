@@ -186,10 +186,12 @@ body {
     background-color: #ffb611;
 }
 
+#comingSoonDesignModal,
 #comingSoonModal2 {
     margin-top: 20rem;
 }
 
+#comingSoonDesignModal .modal-content,
 #comingSoonModal2 .modal-content {
     text-align: center;
     color: grey;
@@ -198,6 +200,24 @@ body {
     width: 50%;
     margin: auto;
     height: 100px;
+}
+
+#comingSoonDesignModal .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#comingSoonDesignModal .modal-content {
+    height: 120px;
+}
+
+#comingSoonDesignModal .modal-content p {
+    margin: 0 20px;
+}
+
+#comingSoonDesignModal .modal-content p a {
+    color: #c0c0c0;
 }
 
 /****************
@@ -340,8 +360,17 @@ body {
         margin-right: -20px;
     }
 
+    #comingSoonDesignModal .modal-content,
     #comingSoonModal2 .modal-content {
         width: 65%;
+    }
+
+    #comingSoonDesignModal .modal-content {
+        padding-top: 28px;
+    }
+
+    #comingSoonDesignModal .modal-content p {
+        margin: 0 25px;
     }
 }
 
