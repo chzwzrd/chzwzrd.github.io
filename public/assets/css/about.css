@@ -206,6 +206,13 @@ body {
     opacity: 0.4;
 }
 
+.footer {
+    margin-left: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(194, 194, 194);
+}
+
 @media only screen and (max-width: 1140px) {
     .navbar-header {
         float: none;
