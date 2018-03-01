@@ -218,6 +218,8 @@ body {
 
 #comingSoonDesignModal .modal-content p a {
     color: #c0c0c0;
+    font-family: 'gotham_bookregular';
+    font-weight: bold;
 }
 
 .footer {
